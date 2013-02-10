@@ -11,10 +11,10 @@
 
 // Colours
 
-@white:			#ffffff;
-@text:			#bbbbbb;
-@link:			#777777;
-@link-hover:	#888888;
+@white:			#fff;
+@text:			#bbb;
+@link:			#777;
+@link-hover:	#888;
 @black:         #343130;
 
 // Responsive layout
@@ -93,10 +93,11 @@ a {
 #download-links {
 	margin: 42px auto;
 	a.download-link {
-		display: inline-block;
+		display: block;
 		width: 286px;
 		height: 42px;
 		padding: 22px 0 0;
+		margin: 0 auto;
 		background: @link;
 		color: @white;
 		&:hover, &:focus {
@@ -107,8 +108,8 @@ a {
 
 .toggle-grey, .toggle-icons, .github-link {
 	display: inline-block;
-	padding: 1em 0.5em;
-	font-size: 0.6em;
+	padding: 0 0.25em;
+	font-size: 0.8em;
 }
 
 .footer {
