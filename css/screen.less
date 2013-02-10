@@ -59,23 +59,6 @@ a {
 		margin: 0;
 		line-height: 1.4em;
 	}
-	a.download-link {
-		display: inline-block;
-		padding: 1em 1.618em;
-		margin: 10px 0;
-		line-height: 1em;
-		background: @link;
-		color: @white;
-		-webkit-transition: all 0.1s linear;
-		-moz-transition: all 0.1s linear;
-		-o-transition: all 0.1s linear;
-		-ms-transition: all 0.1s linear;
-		transition: all 0.1s linear;
-		&:hover {
-			background: @link-hover;
-			color: @white !important;
-		}
-	}
 }
 
 .container {
@@ -108,16 +91,24 @@ a {
 }
 
 #download-links {
-	padding: 40px;
+	margin: 42px auto;
 	a.download-link {
 		display: inline-block;
-		padding: 1em 2em;
+		width: 286px;
+		height: 42px;
+		padding: 22px 0 0;
 		background: @link;
 		color: @white;
 		&:hover, &:focus {
 			background: @link-hover;
 		}
 	}
+}
+
+.toggle-grey, .toggle-icons, .github-link {
+	display: inline-block;
+	padding: 1em 0.5em;
+	font-size: 0.6em;
 }
 
 .footer {
@@ -148,6 +139,7 @@ i.noicon {
 }
 
 i.aboutme{.icons(#00405D,"aboutme")};
+i.alistapart{.icons(#222222,"alistapart")};
 i.amazon{.icons(#ff9900,"amazon")};
 i.amazonwishlist{.icons(#FF9900,"amazonwishlist")};
 i.android{.icons(#a4c639,"android")};
@@ -159,6 +151,7 @@ i.bebo{.icons(#EE1010,"bebo")};
 i.behance{.icons(#1769FF,"behance")};
 i.blip{.icons(#FF1919,"blip")};
 i.blogger{.icons(#F57D00,"blogger")};
+i.bootstrap{.icons(#0088CC,"bootstrap")};
 i.codecademy{.icons(#0088CC,"codecademy")};
 i.codeschool{.icons(#C68044,"codeschool")};
 i.coderwall{.icons(#3E8DCC,"coderwall")};
@@ -223,8 +216,10 @@ i.simpleicons{.icons(#BF1813,"simpleicons")};
 i.skydrive{.icons(#094AB1,"skydrive")};
 i.skype{.icons(#00aff0,"skype")};
 i.slideshare{.icons(#009999,"slideshare")};
+i.smashingmagazine{.icons(#E95C33,"smashingmagazine")};
 i.soundcloud{.icons(#FF6600,"soundcloud")};
 i.spotify{.icons(#80b719,"spotify")};
+i.squarespace{.icons(#000000,"squarespace")};
 i.stackexchange{.icons(#1F5196,"stackexchange")};
 i.stackoverflow{.icons(#F47920,"stackoverflow")};
 i.stumbleupon{.icons(#eb4924,"stumbleupon")};
@@ -251,6 +246,7 @@ i.youtube{.icons(#CD332D,"youtube")};
 /* Retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3), only screen and (min-width: 2500px) {
 	i.aboutme{.retina-icon(#00405D,"aboutme")};
+	i.alistapart{.retina-icon(#222222,"alistapart")};
 	i.amazon{.retina-icon(#ff9900,"amazon")};
 	i.amazonwishlist{.retina-icon(#FF9900,"amazonwishlist")};
 	i.android{.retina-icon(#a4c639,"android")};
@@ -262,6 +258,7 @@ i.youtube{.icons(#CD332D,"youtube")};
 	i.behance{.retina-icon(#1769FF,"behance")};
 	i.blip{.retina-icon(#FF1919,"blip")};
 	i.blogger{.retina-icon(#F57D00,"blogger")};
+	i.bootstrap{.retina-icon(#0088CC,"bootstrap")};
 	i.codecademy{.retina-icon(#0088CC,"codecademy")};
 	i.codeschool{.retina-icon(#C68044,"codeschool")};
 	i.coderwall{.retina-icon(#3E8DCC,"coderwall")};
@@ -326,8 +323,10 @@ i.youtube{.icons(#CD332D,"youtube")};
 	i.skydrive{.retina-icon(#094AB1,"skydrive")};
 	i.skype{.retina-icon(#00aff0,"skype")};
 	i.slideshare{.retina-icon(#009999,"slideshare")};
+	i.smashingmagazine{.retina-icon(#E95C33,"smashingmagazine")};
 	i.soundcloud{.retina-icon(#FF6600,"soundcloud")};
 	i.spotify{.retina-icon(#80b719,"spotify")};
+	i.squarespace{.retina-icon(#000000,"squarespace")};
 	i.stackexchange{.retina-icon(#1F5196,"stackexchange")};
 	i.stackoverflow{.retina-icon(#F47920,"stackoverflow")};
 	i.stumbleupon{.retina-icon(#eb4924,"stumbleupon")};
