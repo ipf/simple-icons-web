@@ -133,6 +133,10 @@ i.noicon {
 	background-color: @colour;
 	background-image: url("@{repo}/@{name}/@{name}-64.png");
 	background-repeat: no-repeat;
+	border-top: 1px solid rgba(255,255,255,0.2);
+	border-radius: 5px;
+	box-shadow: inset 0 -1px 3px darken(@colour,30%),
+		0 2px 5px rgba(0,0,0,0.5);
 }
 
 .retina-icon(@colour: "#999", @name: "") {
